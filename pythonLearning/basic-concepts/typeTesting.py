@@ -1,6 +1,7 @@
 import math
 from selenium import webdriver
 
+
 class MyClass:
     def method(self):
         pass
@@ -8,6 +9,7 @@ class MyClass:
 
 def myfunction():
     return "pass"
+
 
 myList = []
 a = 10.00;
@@ -30,13 +32,21 @@ def printAll():
     print(type(math.pi))  # <class 'float'>
 
 
+def printAttr():
+    print(hasattr(MyClass, "__class__"))
+    print(hasattr(myfunction, "__name__"))
+    print(hasattr(math, "__class__"))
+    print(hasattr("madhur", "__class__"))
+
+
+def printHelp():
+    print(dir(math))
+    print(help(math))
+    print(dir(math.factorial))
+    print(help(math.factorial))
+
+
 if __name__ == "__main__":
-    # printAll()
-    print(hasattr(MyClass,"__class__"))
-    print(hasattr(myfunction,"__name__"))
-    print(hasattr(math,"__class__"))
-    print(hasattr("madhur","__class__"))
-
-
-
-
+    printAll()
+    printAttr()
+    printHelp()
