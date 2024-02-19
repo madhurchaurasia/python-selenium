@@ -36,5 +36,6 @@ class TestCapitalize(unittest.TestCase):
             caps = doCaps.cap_text(text)
 
 
+
 if __name__ == "__main__":
     unittest.main();
